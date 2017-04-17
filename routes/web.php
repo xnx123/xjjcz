@@ -11,6 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+Route::get('/', "IndexController@index");
+Route::get('/register', function(){
+    return view('layouts.register');
 });
+Route::post('/auth/login', 'Auth\LoginController@getLogin');
+Route::post('/auth/register', 'Auth\RegisterController@postRegister');
+Route::get('/welcome', function (){
+    return view("welcome");
+});
+Route::post('/information', "ISIPController@show");
+
