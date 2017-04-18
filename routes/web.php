@@ -23,7 +23,7 @@ Route::post('/auth/register', 'Auth\RegisterController@postRegister');
 Route::get('/welcome', function (){
     return view("welcome");
 });
-Route::post('/information', "ISIPController@show");
+Route::post('/information', "XjjczController@show");
 Route::get('/test', function (){
     return view('layouts.test');
 });
