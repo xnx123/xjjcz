@@ -24,4 +24,7 @@ Route::get('/welcome', function (){
     return view("welcome");
 });
 Route::post('/information', "ISIPController@show");
+Route::get('/test', function (){
+    return view('layouts.test');
+});
 
