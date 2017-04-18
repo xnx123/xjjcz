@@ -72,6 +72,7 @@
                     <label>用户名：</label><input type="text" name="username"/><br/>
                     <label>密  码 ：</label><input type="text" name="password"/><br/>
                     <input type="hidden" name="_token"  value="{{csrf_token()}}"/>
+
                     <input type="submit" value="登录"> <a href="{{ url('register') }}">注册新用户</a>
                 </div>
             </div>
